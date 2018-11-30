@@ -1,16 +1,14 @@
+﻿let N = prompt('Введите число');
+let arr = [];
 
-let N=prompt('Введите число');
-var arr=[];
-for (let i = 2; i < (+N+1); i++) {
-   
+for (let i = 2; i < (+N + 1); i++) {   
     if (parseInt(N) > 1)
     {
-        var isSimple = true;
+        let isSimple = true;
         for (let j = 2; j < i; j++) {
-            if ((i%j)===0){
-                isSimple=false
-            }
-            
+            if ((i%j) === 0){
+                isSimple = false;
+            }            
         }
         if (isSimple){
             arr.push(i);
@@ -19,4 +17,4 @@ for (let i = 2; i < (+N+1); i++) {
     }
 }
 
-alert('простые числа '+arr);
+alert('простые числа ' + arr);
